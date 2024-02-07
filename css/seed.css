@@ -1,0 +1,512 @@
+
+.team-logo {
+    height: 70px;
+    
+}
+.team-name {
+    font-weight: bold;
+    font-size: 18px;
+    margin: auto;
+}
+button.filter-table{
+    padding: 12px 18px;
+    border-radius: 4px;
+    margin-right: 25px;
+    border: 1px #212529 solid;
+    background-color: #212529;
+    color: white;
+    transition: 0.3s background-color;
+}
+
+  div.cac-vong a{
+    color: white !important;
+    text-decoration: none !important;
+    padding-bottom: 8px !important;
+  }
+  div.cac-vong a::after{
+    content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 0;
+      height: 3px; /* Adjust the height of the border as needed */
+      background-color: rgba(0, 255, 255, 0.762);
+      transition: width 0.3s ease; /* Adjust the duration and timing function as needed */
+  
+  }
+  div.cac-vong a:hover::after{
+    width: 100%;
+  }
+button.filter-table {
+    position: relative;
+}
+
+button.filter-table {
+    padding: 12px 18px;
+    border: 1px solid white;
+    transition: 0.3s background-color;
+
+}
+button.filter-table:hover {
+    background-color: rgb(62, 192, 192);
+}
+table.my-table{
+    margin: 30px auto;
+    width: 95%;
+    text-align: center;
+    justify-content: center;
+
+}
+th#lop{
+    text-align: left;
+}
+.group {
+    display: none;
+  }
+
+  .groupA, .groupB {
+    display: none;
+  }
+
+  .visible {
+    display: block !important;
+  }
+
+th{
+    padding: 5px 0 15px 0;
+}
+div.table_rank_A{
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+tr:nth-child(1),tr:nth-child(2),tr:nth-child(3),tr:nth-child(4),tr:nth-child(5),tr:nth-child(6),tr:nth-child(7),tr:nth-child(8){
+    border-left: rgba(255, 242, 0, 0.762) 5px solid;
+}
+
+tr:nth-child(9),tr:nth-child(10),tr:nth-child(11),tr:nth-child(12),tr:nth-child(13),tr:nth-child(14),tr:nth-child(15),tr:nth-child(16){
+    border-left: #C0C0C0 5px solid;
+
+}
+tr:nth-child(17),tr:nth-child(18),tr:nth-child(19),tr:nth-child(20),tr:nth-child(21),tr:nth-child(22),tr:nth-child(23),tr:nth-child(24){
+    border-left: #cd7f32 5px solid;
+
+}
+tr:nth-child(25),tr:nth-child(26),tr:nth-child(27),tr:nth-child(28),tr:nth-child(29),tr:nth-child(30){
+    border-left: rgb(62, 192, 192) 5px solid;
+
+}
+tr:nth-child(31),tr:nth-child(32),tr:nth-child(33),tr:nth-child(34),tr:nth-child(35),tr:nth-child(36),tr:nth-child(37),tr:nth-child(38){
+    border-left: rgb(243, 100, 100) 5px solid;
+}
+tr.title{
+    border-left:  none;
+}
+td:nth-child(1){
+    text-align: center;
+}
+td:nth-child(2){
+    text-align: right;
+    width: 8%;
+}
+td:nth-child(3){
+    text-align: left;
+    width: 17%;
+}
+th#lop{
+    text-align: center;
+}
+
+td,th{
+    border-bottom: 1px solid #212529;
+}
+
+td,tr{
+    padding: 5px 0 5px 10px;
+
+}
+a.w3-bar-item{
+    color: black;
+}
+
+
+.row1 {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    width: 85%;
+    margin: 10px auto 70px;
+    border-radius: 10px;
+    justify-content: space-between;
+    padding: 7px 20px;
+}
+.loser-darker{
+    filter: brightness(60%);
+}
+
+.winner-brighter{
+    filter: brightness(105%);
+    color:rgba(255, 255, 0, 0.841);
+}
+
+.team, .score-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+}
+span.winner, span.loser {
+    display: inline-block;
+    width: 30px; /* Adjust the width as needed */
+    text-align: center; /* Optional: Center the text within the elements */
+    justify-content: space-between;
+  }
+.score-container {
+    text-align: center;
+    margin: auto; /* Center the score-container */
+}
+
+span.score {
+    font-weight: 700;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+span.score-left,span.score-right,span.gach{
+    font-size: 22px;
+}
+
+span.gach{
+    margin: 0 5px;
+}
+
+
+
+span.winner{
+    font-size: 14px;
+    font-weight: bolder;
+    color: aqua;
+    justify-content: center;
+}
+
+h6.match{
+    text-align: center;
+    font-size: 19px;
+    font-weight: bolder;
+}
+h6.match:nth-child(1){
+    margin-top: 30px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px grey; 
+    border-radius: 10px;
+    filter:brightness(10%)
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: grey; 
+    border-radius: 10px;
+  }
+  
+  a.custom-focus{
+    color: white !important;
+    padding: 40px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.195) !important;
+    filter: brightness(120%) !important;
+    border-right: 8px solid rgba(0, 255, 255, 0.762) !important;
+}
+h3{
+    text-align: center;
+    font-weight: bold !important;
+    font-size: 28px !important;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+  /* Handle on hover */
+
+@media screen and (min-width: 1400px) {
+    div.w3-container{
+        width: 82%;
+        margin-left: 18%;
+        padding-top: 60px;
+    }
+    td{
+        width: 100px;
+    }
+
+    div.cac-vong{
+        padding: 40px 0px 0 60px;
+      }
+      div.cac-vong li{
+        list-style: none;
+        display: inline-flex;
+        margin-right: 50px;
+        position: relative;
+      }
+    
+    #mySidebar a{
+        color: white ;
+        padding: 50px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.195);
+        filter:brightness(50%);
+        
+
+    }
+
+
+    
+
+    .button-filter{
+        padding: 30px 0 20px 80px;
+    }
+    .w3-teal{
+        padding-top: 80px;
+        color: black;
+        background-color: #212529 !important;
+    }
+ 
+}
+@media screen and (max-width:1399.98px) and (min-width:992px){
+    div.w3-container{
+        width: 82%;
+        margin-left: 18%;
+    }
+    #mySidebar{
+        width: 18%;
+        background-color: #212529;
+        padding-top:80px ;
+    }
+
+    #mySidebar a{
+        color: white ;
+        padding: 40px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.195);
+        filter:brightness(50%)
+
+    }
+    div.cac-vong{
+        padding: 120px 0px 0 300px;
+      }
+      div.cac-vong li{
+        list-style: none;
+        display: inline-flex;
+        margin-right: 30px;
+        position: relative;
+      }
+    .myLink:focus{
+        color: white !important;
+        padding: 40px !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.195) !important;
+        filter: brightness(120%) !important;
+        border-right: 8px solid rgba(0, 255, 255, 0.762) !important;  
+    }
+    
+
+    .w3-teal{
+        display: none;
+    }
+    div.w3-container{
+        width: 88%;
+
+    }
+
+    .button-filter{
+        padding: 10px 0 30px 70px;
+    }
+
+    }
+    
+
+@media screen and (max-width:991.98px) and (min-width:765.98px){
+    h3{
+        font-size: 25px !important;
+    }
+    .row1{
+
+    width: 95%;
+
+    
+    }
+    div.cac-vong{
+        padding: 40px 0px 0 15px;
+      }
+      div.cac-vong li{
+        list-style: none;
+        display: inline-flex;
+        margin-right: 30px;
+        position: relative;
+      }
+    .w3-container{
+        margin: 0;
+    }
+    div.w3-teal{
+        margin-top: 80px;
+        color: black;
+        padding: 0;
+    }
+    button.w3-teal{
+        padding: 20px;
+    }
+    .button-filter{
+        padding: 30px 0 20px 20px;
+    }
+    .myLink:focus{
+        color: white !important;
+        padding: 40px !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.195) !important;
+        filter: brightness(120%) !important;
+        border-right: 8px solid rgba(0, 255, 255, 0.762) !important;  
+    }
+    
+
+    button.w3-bar-item{
+        background-color: #212529;
+        padding: 40px !important;
+    }
+    #mySidebar a{
+        color: white ;
+        padding: 40px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.195);
+        filter:brightness(50%);
+        background-color: #212529;
+    }
+    h3{
+        font-size: 25px !important;
+    }
+    td,th{
+        background-color: #5800bc !important;
+    }
+}
+
+@media screen and (max-width:765.98px){
+    td:nth-child(1),td:nth-child(2){
+        width: 6% !important;
+    }
+    td:nth-child(3) {
+        width: 12% !important;
+    }
+    h3{
+        font-size: 22px !important;
+    }
+    button.w3-bar-item{
+        background-color: #212529;
+        padding: 25px !important;
+    }
+    .button-filter{
+        padding: 10px 0 0px 20px;
+    }
+    button.filter-table{
+        margin-top: 10px;
+    }
+    #mySidebar{
+        background-color: #212529;
+        padding: 0px;
+        margin-top: 70px;
+    }
+    #mySidebar a{
+        color: white ;
+        padding: 25px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.195);
+        filter:brightness(50%);
+        background-color: #212529;
+    }
+    .w3-container{
+        margin: 0;
+    }
+    div.groupD div.w3-teal{
+        color: black;
+        width: 100%;
+    }
+    div.w3-teal{
+        margin-top: 10px;
+    }
+
+    button.w3-teal{
+        padding-top: 10px;
+    }
+    table.my-table{
+        width: 250%;
+    }
+    th,td{
+        padding: 20px 22px;
+
+   
+    }
+    td:nth-child(2){
+        padding: 0;
+    }
+    td:first-child{
+        padding: 1px;
+    }
+    div.cac-vong{
+        padding: 40px 0px 0 15px;
+      }
+      div.cac-vong li{
+        list-style: none;
+        display: block;
+        margin-bottom: 20px;
+        position: relative;
+      }
+    .row1{
+    padding: 10px ;
+    width: 100%;
+
+    }
+    .score-container {
+        text-align: center;
+        margin: auto; /* Center the score-container */
+    }
+    
+    span.score {
+        font-weight: 700;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    
+    span.score-left,span.score-right,span.gach{
+        font-size: 15px;
+    }
+    
+    span.gach{
+        margin: 0 5px;
+    }
+    
+    span.winner{
+        font-size: 15px;
+        font-weight: bolder;
+        color: aqua;
+        justify-content: center;
+        
+    }
+    .team-logo {
+        height: 35px;
+        padding: 0px 5px;
+        
+    }
+    .team-name {
+        font-weight: bold;
+        font-size: 14px;
+    } 
+    td,th{
+        background-color: #5800bc !important;
+    }
+
+   
+}
+@media screen and (max-width:360.98px){
+    div.w3-teal{
+        margin-top: 8px;
+    }
+
+    td,th{
+        background-color: #5800bc !important;
+    }
+}

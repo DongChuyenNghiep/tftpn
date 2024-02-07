@@ -1,0 +1,209 @@
+body{
+    font-family: 'Nunito' !important;
+    font-size: 17px;
+    background-color: #08142c;
+    color: white;
+}
+.info p.note{
+    text-align: center;
+    padding-bottom: 10px;
+}
+div.all-team{
+    padding-top: 200px;
+    margin: 0 auto;
+    width: 90%;
+}
+div.row{
+    display: flex;
+    justify-content: center;
+}
+section.info h2{
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+div.group{
+    width: 21%;
+    background-color: #08142c;
+    display: block;
+    padding: 0;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+    border: 1px white solid;
+    margin-left: 40px;
+}
+div.group:first-child{
+    margin-left: 0;
+}
+section.name-group p{
+    text-align: center;
+    padding: 15px 0;
+    margin: 0;
+    border-bottom: 1px white solid;
+}
+table.table-team{
+    background-color: #08142c;
+    color: white;
+    padding: 5px 0;
+}
+tr:last-child td{
+    border-bottom: none;
+}
+.table-team{
+    border-radius: 20px;
+}
+table td:nth-child(2){
+    width: 4%;
+}
+table td:nth-child(2) p{
+    margin-left: 20px;
+    margin-top: 12px;
+}
+table.table-team td:nth-child(1){
+    width: 1%;
+    text-align: center;
+}
+img.team-logo {
+    aspect-ratio: 1/1;
+}
+div.row{
+    margin-bottom: 40px;
+}
+
+div.group a{
+    text-decoration: none;
+}
+
+@media screen and (max-width:1024px) and (min-width:768px) {
+    div.row{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    div.group,div.group:first-child{
+        margin: 30px auto;
+        width: 50%;
+        font-size: 19px;
+    }
+    .team-logo{
+        height: 80px;
+        aspect-ratio: 1/1;
+        padding: 7px;
+    }
+    table.table-team td{
+        background-color: #08142c !important;
+        color: white;
+        padding: 5px 0;
+
+    }
+    table.table-team tr:last-child td{
+        border-radius: 20px;
+    }
+    
+}
+@media screen and (max-width:768px) and (min-width:540px) {
+    div.row{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    div.group,div.group:first-child{
+        margin: 30px auto;
+        width: 80%;
+        font-size: 18px;
+    }
+    .team-logo{
+        height: 70px;
+        aspect-ratio: 1/1;
+        padding: 7px;
+    }
+    table.table-team td{
+        background-color: #08142c !important;
+        color: white;
+        padding: 5px 0;
+
+    }
+    table.table-team tr:last-child td{
+        border-radius: 20px;
+    }
+    
+}
+@media screen and (max-width:540px) and (min-width:425px) {
+    div.row{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    div.group,div.group:first-child{
+        margin: 30px auto;
+        width: 80%;
+        font-size: 18px;
+    }
+    .team-logo{
+        height: 65px;
+        aspect-ratio: 1/1;
+        padding: 7px;
+    }
+    table.table-team td{
+        background-color: #08142c !important;
+        color: white;
+        padding: 5px 0;
+
+    }
+    table.table-team tr:last-child td{
+        border-radius: 20px;
+    }
+}
+
+@media screen and (max-width:425px) and (min-width:360px) {
+    div.row{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    div.group,div.group:first-child{
+        margin: 50px auto;
+        width: 90%;
+        font-size: 19px;
+    }
+    .team-logo{
+        height: 62px;
+        aspect-ratio: 1/1;
+        padding: 7px;
+    }
+    table.table-team td{
+        background-color: #08142c !important;
+        color: white;
+        padding: 5px 0;
+
+    }
+    table.table-team tr:last-child td{
+        border-radius: 20px;
+    }
+}
+@media screen and (max-width:360px) {
+    div.row{
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    div.group,div.group:first-child{
+        margin: 30px auto;
+        width: 95%;
+        font-size: 17px;
+    }
+    .team-logo{
+        height: 65px;
+        aspect-ratio: 1/1;
+        padding: 7px;
+    }
+    table.table-team td{
+        background-color: #08142c !important;
+        color: white;
+        padding: 5px 0;
+
+    }
+    table.table-team tr:last-child td{
+        border-radius: 20px;
+    }
+}
