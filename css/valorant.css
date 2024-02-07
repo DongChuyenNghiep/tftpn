@@ -49,7 +49,9 @@ button.filter-table {
     color: white;
     transition: 0.3s background-color;
 }
-
+.table_fixture{
+    margin-top: 80px;
+}
 .nav1 {
     background-color: #08142c;
     padding: 22px 0;
@@ -147,8 +149,8 @@ button.filter-table:hover {
 }
 
 table.my-table {
-    margin: 30px auto;
-    width: 95%;
+    margin: 10px auto;
+    width: 89%;
     text-align: center;
     justify-content: center;
 
@@ -165,6 +167,8 @@ table.my-table {
 }
 table.my-table td{
     width: 8%;
+    padding: 10px;
+    background-color: #041E4D;
 }
 
 .team-name{
@@ -251,16 +255,14 @@ tr.title {
     border-radius: 5px;
 }
 table.my-table td:nth-child(1) {
-    text-align: right;
-    width: 8%;
+    width: 10%;
+    text-align: left;
+    padding-left: 20px;
 }
 .pagination a.active {
     background-color: #0056b3;
 }
-table.my-table td:nth-child(2) {
-    text-align: left;
 
-}
 .rank{
     padding-right: 50px;
     padding-left: 15px;
@@ -269,11 +271,11 @@ img.agent-pick{
     width: 50px;
     margin: 3px 20px 3px 15px;
 }
-table.my-table tr{
-    border-bottom: 1px solid rgba(252, 252, 252, 0.334);
+table.my-table td{
+    padding: 10px 0;
 }
 table.my-table img{
-    margin: 10px 0;
+    margin: 20px 10px;
 }
 p.kda{
     text-align: center;
@@ -284,19 +286,16 @@ p.team-name{
     padding-top: 15px;
 }
 td,
-th {
-    border-bottom: 1px solid rgba(252, 252, 252, 0.334);
+th{
+    border-bottom: 4px solid #02112D;
+    padding: 20px 0;
 }
 .fc-unthemed .fc-popover .fc-header{
     background-color: #8968cd;
     color: black;
     font-family: 'Nunito';
 }
-td,
-tr,th {
-    padding: 5px 0 5px 10px;
 
-}
 
 a.w3-bar-item {
     color: black;
@@ -337,6 +336,15 @@ body {
     align-items: center;
     flex: 1;
     justify-content: center;
+}
+.table_rank table.my-table td:nth-child(1),th.rank{
+    width: 5%;
+    text-align: center;
+    padding: 0;
+}
+.table_rank table.my-table td:nth-child(2){
+    width: 10%;
+    text-align: left;
 }
 
 span.winner,
@@ -418,10 +426,14 @@ h6.match:nth-child(1) {
 }
 
 .wrapper {
+    width: 85%;
+    margin: 0 auto;
     position: relative;
     overflow: auto;
     white-space: nowrap;
-
+    background-color: #02112D;
+    margin-bottom: 50px;
+    padding: 40px 0;
 }
 /* Track */
 ::-webkit-scrollbar-track {
@@ -446,7 +458,7 @@ a.custom-focus {
 
 h3 {
     text-align: center;
-    font-weight: bold !important;
+    font-weight: 900 !important;
     font-size: 28px !important;
     padding-bottom: 10px;
 }
@@ -519,7 +531,11 @@ h3 {
 
 
     .button-filter {
-        padding: 30px 0 20px 80px;
+        padding: 10px 0 20px 80px;
+        margin: 180px auto 0;
+        justify-content: center;
+        width: 30%;
+        
     }
 
     .w3-teal {
