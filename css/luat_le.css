@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    
 }
 
 .rule{
@@ -10,9 +11,10 @@
     background-color: black;
     color: white;
     font-size: 'Nunito';
-}
+    }
 .rule li{
     list-style: none;
+    font-size: 18px;
 }
 
 .rule h2{
@@ -30,6 +32,7 @@ div.rule1{
 }
 .rule1 p{
     margin: 0;
+    font-size: 18px;
 }
 .rule1 h4{
     font-size: 22px;
