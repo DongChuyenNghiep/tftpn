@@ -1,9 +1,9 @@
 
-let SHEET_RANGE_C_1 = 'A25:F32';
+let SHEET_RANGE_D_1 = 'A25:F32';
 
-let FULL_URL_TABLE_C = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${SHEET_TITLE}&range=${SHEET_RANGE_C_1}`;
+let FULL_URL_TABLE_D = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${SHEET_TITLE}&range=${SHEET_RANGE_D_1}`;
 
-fetch(FULL_URL_TABLE_C)
+fetch(FULL_URL_TABLE_D)
     .then((res) => res.text())
     .then((rep) => {
         let data = JSON.parse(rep.substr(47).slice(0, -2));
