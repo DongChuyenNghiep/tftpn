@@ -7,7 +7,7 @@ fetch(FULL_URL_TABLE_D)
     .then((res) => res.text())
     .then((rep) => {
         let data = JSON.parse(rep.substr(47).slice(0, -2));
-        let dataBody = document.getElementById('table_ranktable_C');
+        let dataBody = document.getElementById('table_ranktable_D');
         for (let i = 0; i < data.table.rows.length; i++) {
             let rowData = data.table.rows[i].c;
 let row = document.createElement('tr');
