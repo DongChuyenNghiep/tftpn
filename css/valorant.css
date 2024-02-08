@@ -426,8 +426,8 @@ h6.match:nth-child(1) {
 }
 
 .wrapper {
-    width: 85%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 20px auto;
     position: relative;
     overflow: auto;
     white-space: nowrap;
@@ -598,8 +598,11 @@ h3 {
     }
 
     .button-filter {
-        padding: 10px 0 30px 70px;
-        margin: 20px 10px 0 0;
+        padding: 10px 0 20px 80px;
+        margin: 180px auto 0;
+        justify-content: center;
+        width: 40%;
+        
     }
     
 }
@@ -609,11 +612,14 @@ h3 {
         margin-left: 18%;
         
     }
+
     .button-filter {
-        padding: 10px 0 30px 70px;
-        margin: 20px 10px 0 0;
+        padding: 10px 0 20px 80px;
+        margin: 180px auto 0;
+        justify-content: center;
+        width: 35%;
+        
     }
-    
     
     #mySidebar {
         width: 18%;
@@ -647,9 +653,12 @@ h3 {
     }
 
     .button-filter {
-        padding: 10px 0 0px 20px;
+        padding: 10px 0 20px 80px;
+        margin: 180px auto 0;
+        justify-content: center;
+        width: 35%;
+        
     }
-
     button.filter-table {
         margin-top: 10px;
     }
@@ -770,15 +779,18 @@ h3 {
         font-size: 14px;
     }
 
-    .sticky-col {
-        position: sticky;
-
-    }
     .wordBox1 table{
         width: 152%;
     }
     table.my-table {
-        width: 90%;
+        width: 150%;
+    }
+    table.my-table td:first-child,th#ign{
+        left: 0;
+        position: sticky;
+    }
+    th#ign{
+        background-color: #02112D;
     }
     .wordBox1 table td{
         width: 15%;
@@ -821,10 +833,9 @@ h3 {
     td {
         padding: 0 40px;
     }
-    table.my-table td:nth-child(1),
-    table.my-table td:nth-child(2) {
+    table.my-table td:nth-child(1) {
         padding: 0 10px;
-        background-color: #5800bc;
+        left: 0;
     }
 
     tbody {
@@ -891,7 +902,11 @@ h3 {
 
 
     .button-filter {
-        padding: 30px 0 20px 20px;
+        padding: 10px 0 20px 80px;
+        margin: 180px auto 0;
+        justify-content: center;
+        width: 35%;
+        
     }
 
     .myLink:focus {
@@ -960,9 +975,22 @@ h3 {
     }
 
     .button-filter {
-        padding: 10px 0 0px 20px;
+        padding: 10px 0 20px 80px;
+        margin: 180px auto 0;
+        justify-content: center;
+        width: 90%;
+        
     }
-
+    th#ign{
+        background-color: #02112D;
+    }
+    th#ign, table.my-table td:first-child{
+        position: sticky;
+        left: 0;
+    }
+    table.my-table{
+        width: 180% !important;
+    }
     button.filter-table {
         margin-top: 10px;
     }
@@ -1068,14 +1096,7 @@ h3 {
         font-size: 14px;
     }
 
-    .sticky-col {
-        position: sticky;
 
-    }
-
-    table.my-table {
-        width: 90%;
-    }
     .wordBox1 table td:nth-child(1){
         padding: 0;
     }
@@ -1111,11 +1132,6 @@ h3 {
 
     td {
         padding: 0 40px;
-    }
-    table.my-table td:nth-child(1),
-    table.my-table td:nth-child(2) {
-        padding: 0 10px;
-        background-color: #5800bc;
     }
 
     tbody {
