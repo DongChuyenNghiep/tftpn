@@ -384,6 +384,20 @@ body {
     text-align: center;
     padding: 0;
 }
+table.longtable tr:nth-child(1) td{
+    background-color: rgb(190, 162, 3) !important;
+}
+table.longtable tr:nth-child(2) td{
+    background-color: rgb(177, 175, 175) !important;
+}
+table.longtable tr:nth-child(3) td{
+    background-color: #9a6025 !important;
+}
+table.longtable td:nth-child(1),th.rank{
+    width: 9%;
+    text-align: left !important;
+    padding-left: 15px !important;
+}
 .table_rank table.my-table td:nth-child(2){
     width: 10%;
     text-align: left;
