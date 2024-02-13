@@ -171,6 +171,36 @@ table.my-table td{
     background-color: #041E4D;
 }
 
+table.longtable th#ign,table.longtable th#lop,table.longtable th#total{
+    background-color:#02112D;
+}
+table.longtable th#ign,table.longtable td:first-child{
+    position: sticky;
+    left: 0;
+}
+table.longtable td:nth-child(2),table.longtable th#lop{
+    position: sticky;
+    left: 14.15%;
+}
+table.longtable td:nth-child(3),table.longtable th#total{
+    position: sticky;
+    left: 28.2%;
+}
+table.longtable td:nth-child(3)::after,table.longtable th#total::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 10px;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), transparent);
+}
+
+table.longtable td{
+    width: 7%;
+    padding: 10px;
+    background-color: #041E4D;
+}
 .team-name{
     text-align: center;
 }
@@ -201,6 +231,18 @@ div.table_rank_A {
 }
 .team-right{
     background-color: rgb(199, 95, 81);
+}
+table.longtable{
+    width: 200% !important;
+}
+table.longtable td:last-child{
+    width: 15% !important;
+    padding: 0 20px;
+}
+.longtable td{
+    text-align: center !important;
+    padding: 10px 0 !important;
+    width: 15%;
 }
   
   .wordBox1 table{
@@ -346,7 +388,9 @@ body {
     width: 10%;
     text-align: left;
 }
-
+.finale{
+    margin-top: 180px !important;
+}
 span.winner,
 span.loser {
     display: inline-block;

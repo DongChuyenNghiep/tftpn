@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-adsense-account" content="ca-pub-8943279217968567">
-    <title>Vòng 3</title>
+    <title>Vòng chung kết</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/valorant.css">
@@ -30,7 +30,7 @@
                         <a class="nav-link focusable-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link focusable-link" aria-current="page" href="final.html">Các trận đấu</a>
+                        <a class="nav-link focusable-link" aria-current="page" href="vong3.html">Các trận đấu</a>
                     <li class="nav-item">
                         <a class="nav-link focusable-link" href="luat_thi_dau.html">Luật</a>
                     </li>
@@ -56,9 +56,6 @@
                     <li class="nav-item">
                         <a class="nav-link focusable-link" aria-current="page" href="vong3.html">Vòng 3 (16)</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link focusable-link" aria-current="page" href="final.html">Chung kết (8)</a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -68,83 +65,40 @@
 
 
         <div>
-
-            <div class="button-filter">
-                <button class="filter-table" onclick="showTable('lobby')" id="button_fixture">Bảng đấu</button>
-                <button class="filter-table" onclick="showTable('rank')" id="button_rank">Bảng xếp hạng</button>
-
-
-            </div>
-
             <div id="table_lobby" class="table_lobby">
                 <div id='table_ranktable'>
+                    <div class="finale">
+                        <h3>CHUNG KẾT</h3>
                     <div class="wrapper">
-                        <h3>LOBBY A</h3>
-                        <table class="my-table">
+                        <table class=" longtable">
                             <thead>
                                 <tr class="title">
-                                    <th scope="col" id="lop" class="sticky-col sec-col">IGN</th>
-                                    <th scope="col" id="lop" class="sticky-col sec-col">Lớp</th>
-                                    <th scope="col" id="match">Trận 1</th>
-                                    <th scope="col" id="win">Trận 2</th>
-                                    <th scope="col" id="lose">Trận 3</th>
-                                    <th scope="col" id="lose">Trận 4</th>
-                                    <th scope="col" id="win">Điểm</th>
+                             
+                                    <th scope="col" id="ign" class="">IGN</th>
+                                    <th scope="col" id="lop">Lớp</th>
+                                    <th scope="col" id="total">Total</th>
+                                    <th scope="col" id="Tran 1">Trận 1</th>
+                                    <th scope="col" id="Tran 2">Trận 2</th>
+                                    <th scope="col" id="Tran 3">Trận 3</th>
+                                    <th scope="col" id="Tran 4">Trận 4</th>
+                                    <th scope="col" id="Tran 5">Trận 5</th>
+                                    <th scope="col" id="Tran 6">Trận 6</th>
+                                    <th scope="col" id="Tran 7">Trận 7</th>
+                                    <th scope="col" id="Tran 8">Trận 8</th>
+                                    <th scope="col" id="lose">Checkmate</th>
+                                    <th scope="col" id="Note">Note</th>
+
                                 </tr>
                             </thead>
-                            <tbody id="table_ranktable_A">
+                            <tbody id="table_ranktable_bxh">
                                 <!-- The table body will be populated with data dynamically -->
                             </tbody>
                         </table>
                     </div>
-                    <div class="wrapper">
-                        <h3>LOBBY B</h3>
-                        <table class="my-table">
-                            <thead>
-                                <tr class="title">
-                                    <th scope="col" id="lop" class="sticky-col sec-col">IGN</th>
-                                    <th scope="col" id="lop" class="sticky-col sec-col">Lớp</th>
-                                    <th scope="col" id="match">Trận 1</th>
-                                    <th scope="col" id="win">Trận 2</th>
-                                    <th scope="col" id="lose">Trận 3</th>
-                                    <th scope="col" id="lose">Trận 4</th>
-                                    <th scope="col" id="win">Điểm</th>
-                                </tr>
-                            </thead>
-                            <tbody id="table_ranktable_B">
-                                <!-- The table body will be populated with data dynamically -->
-                            </tbody>
-                        </table>
-                    </div>
+                </div>
                 </div>
             </div>
 
-            <div class="table_rank" >
-                <div class="wrapper" id="leaderboard1" >
-                    <h3> BẢNG XẾP HẠNG VÒNG 3</h3>
-                    <table class="my-table" id="leaderboard">
-                        <thead>
-                            <tr class="title">
-                                <th scope="col" id="lop" class="rank"></th>
-                                <th scope="col" id="lop">IGN</th>
-                                <th scope="col" id="lop">Lớp</th>
-                                <th scope="col" id="match">Trận 1</th>
-                                <th scope="col" id="win">Trận 2</th>
-                                <th scope="col" id="lose">Trận 3</th>
-                                <th scope="col" id="lose">Trận 4</th>
-                                <th scope="col" id="win">Điểm</th>
-                            </tr>
-                        </thead>
-                        <tbody id="table_ranktable_bxh">
-                            <!-- The table body will be populated with data dynamically -->
-                        </tbody>
-                    </table>
-                    <div id="pagination-container">
-                        <ul class="pagination">
-                            <!-- Pagination links will be added dynamically using JavaScript -->
-                        </ul>
-                </div>
-            </div>
         </div>
 
     <!--Phan B-->
@@ -186,11 +140,8 @@ showWordsElements.forEach((showWords, index) => {
     isBoxVisible[index] = !isBoxVisible[index]; // Toggle the state
   });
 });
-    </script>
-    <script src="js code/choose/choose.js"></script>    
-    <script src="js code/vong3/lobbyA.js"></script>
-    <script src="js code/vong3/lobbyB.js"></script>
-    <script src="js code/vong3/bxhvong3.js"></script>
+    </script>   
+    <script src="js code/final/bxhfinal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
