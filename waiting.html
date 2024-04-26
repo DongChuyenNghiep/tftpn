@@ -15,14 +15,18 @@
     <link rel="shortcut icon" type="image/x-icon" href="image/logo.png" />
     <style>
         .countdown {
-            font-family: 'Nunito';
+            
             text-align: center;
-            margin-top: 300px;
+            margin-top: 150px;
         }
 
         .countdown h1 {
-            font-size: 3em;
+            font-family: 'Nunito' !important;
+            font-size: 2.5em;
             margin-bottom: 20px;
+        }
+        div#timer{
+            font-size: 17px;
         }
     </style>
 
@@ -52,13 +56,14 @@
         </div>
     </nav>
     <div class="countdown">
-        <h1>Trang này sẽ mở sau khi tụi mình bốc thăm xong nhé</h1>
+        <img src="image/waiting.png" alt="">
+        <h1>Trang này sẽ mở vào lúc 9:00 (29/4/2024) nhé</h1>
         <div id="timer"></div>
     </div>
 
     <script>
         // Set the opening time (in milliseconds since Unix epoch)
-        const openingTime = new Date('2024-04-29T05:47:00').getTime();
+        const openingTime = new Date('2024-04-29T05:00:00').getTime();
 
         // Update the countdown every second
         const timerInterval = setInterval(function () {
