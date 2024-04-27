@@ -1,5 +1,5 @@
 
-let SHEET_RANGE_VONG_1 = 'I1:O32';
+let SHEET_RANGE_VONG_1 = 'I1:P32';
 
 let FULL_URL_SHEET_RANGE_VONG_1 = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${SHEET_TITLE}&range=${SHEET_RANGE_VONG_1}`;
 
@@ -18,6 +18,7 @@ fetch(FULL_URL_SHEET_RANGE_VONG_1)
     let cell4 = document.createElement('td');
     let cell5 = document.createElement('td');
     let cell6 = document.createElement('td');
+    let cell7 = document.createElement('td');
 
     
 
@@ -28,6 +29,7 @@ fetch(FULL_URL_SHEET_RANGE_VONG_1)
     cell4.textContent = rowData[4].v;
     cell5.textContent = rowData[5].v;
     cell6.textContent = rowData[6].v;
+    cell7.textContent = rowData[7].v;
 
 
     row.appendChild(cell0);
@@ -37,6 +39,7 @@ fetch(FULL_URL_SHEET_RANGE_VONG_1)
     row.appendChild(cell4);
     row.appendChild(cell5);
     row.appendChild(cell6);
+    row.appendChild(cell7);
 
 
     dataBody.appendChild(row);
