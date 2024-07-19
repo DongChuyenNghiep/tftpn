@@ -1,5 +1,5 @@
 
-let SHEET_RANGE_VONG_1 = 'I1:P32';
+let SHEET_RANGE_VONG_1 = 'M1:X24';
 
 let FULL_URL_SHEET_RANGE_VONG_1 = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${SHEET_TITLE}&range=${SHEET_RANGE_VONG_1}`;
 
@@ -19,10 +19,15 @@ fetch(FULL_URL_SHEET_RANGE_VONG_1)
     let cell5 = document.createElement('td');
     let cell6 = document.createElement('td');
     let cell7 = document.createElement('td');
+    let cell8 = document.createElement('td');
+    let cell9 = document.createElement('td');
+    let cell10 = document.createElement('td');
+    let cell11 = document.createElement('td');
 
-    
+    // Assuming rowData[0].v contains the source URL for the image
 
-    cell0.textContent= rowData[0].v;
+
+    cell0.textContent = rowData[0].v;
     cell1.textContent = rowData[1].v;
     cell2.textContent = rowData[2].v;
     cell3.textContent = rowData[3].v;
@@ -30,8 +35,10 @@ fetch(FULL_URL_SHEET_RANGE_VONG_1)
     cell5.textContent = rowData[5].v;
     cell6.textContent = rowData[6].v;
     cell7.textContent = rowData[7].v;
-
-
+    cell8.textContent = rowData[8].v;
+    cell9.textContent = rowData[9].v;
+    cell10.textContent = rowData[10].v;
+    cell11.textContent = rowData[11].v;
     row.appendChild(cell0);
     row.appendChild(cell1);
     row.appendChild(cell2);
@@ -40,8 +47,10 @@ fetch(FULL_URL_SHEET_RANGE_VONG_1)
     row.appendChild(cell5);
     row.appendChild(cell6);
     row.appendChild(cell7);
-
-
+    row.appendChild(cell8);
+    row.appendChild(cell9);
+    row.appendChild(cell10);
+    row.appendChild(cell11);
     dataBody.appendChild(row);
   }
 
