@@ -1,6 +1,6 @@
 let SHEET_ID = '1IK6JT13Oa4IDYYEev6FSv1_jjeJ-ex2LJdXkgQEbPFc';
 let SHEET_TITLE = 'Vòng 1';
-let SHEET_RANGE_A_1 = 'A1:K8';
+let SHEET_RANGE_A_1 = 'A1:L8';
 
 let FULL_URL_TABLE_A = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?sheet=${SHEET_TITLE}&range=${SHEET_RANGE_A_1}`;
 
@@ -23,6 +23,7 @@ fetch(FULL_URL_TABLE_A)
             let cell8 = document.createElement('td');
             let cell9 = document.createElement('td');
             let cell10 = document.createElement('td');
+            let cell11 = document.createElement('td');
 
             // Assuming rowData[0].v contains the source URL for the image
 
@@ -38,6 +39,7 @@ fetch(FULL_URL_TABLE_A)
             cell8.textContent = rowData[8].v;
             cell9.textContent = rowData[9].v;
             cell10.textContent = rowData[10].v;
+            cell11.textContent = rowData[11].v;
             row.appendChild(cell0);
             row.appendChild(cell1);
             row.appendChild(cell2);
@@ -49,6 +51,7 @@ fetch(FULL_URL_TABLE_A)
             row.appendChild(cell8);
             row.appendChild(cell9);
             row.appendChild(cell10);
+            row.appendChild(cell11);
 
 
 

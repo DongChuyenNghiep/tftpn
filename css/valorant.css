@@ -150,11 +150,12 @@ button.filter-table:hover {
 
 table.my-table {
     margin: 10px auto;
-    width: 89%;
+    width: 95%;
     text-align: center;
     justify-content: center;
 
 }
+
 .bxh table {
     margin: 0 auto ;
     width: 95%;
@@ -166,7 +167,7 @@ table.my-table {
     padding: 12px 0 12px 10px !important;
 }
 table.my-table td{
-    width: 8%;
+    width: 7%;
     padding: 10px;
     background-color: #041E4D;
 }
@@ -484,7 +485,7 @@ h6.match:nth-child(1) {
 }
 
 .wrapper {
-    width: 90%;
+    width: 95%;
     margin: 20px auto;
     position: relative;
     overflow: auto;
